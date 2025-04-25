@@ -496,6 +496,362 @@ const questions = [
 },
 
 {
+  question: "In a relational database, which normal form ensures that there are no partial dependencies of non-prime attributes on the candidate key?",
+  options: ["1NF", "2NF", "3NF", "BCNF"],
+  answer: "2NF"
+},
+{
+  question: "Which principle of OOP is violated if a subclass cannot substitute its parent class without altering the program's correctness?",
+  options: ["Encapsulation", "Inheritance", "Polymorphism", "Liskov Substitution Principle"],
+  answer: "Liskov Substitution Principle"
+},
+{
+  question: "What is the primary function of the Memory Management Unit (MMU) in a CPU?",
+  options: ["To manage cache memory", "To translate virtual addresses to physical addresses", "To control I/O operations", "To execute arithmetic operations"],
+  answer: "To translate virtual addresses to physical addresses"
+},
+{
+  question: "In the OSI model, which layer is responsible for error detection and recovery in data frames?",
+  options: ["Physical Layer", "Data Link Layer", "Network Layer", "Transport Layer"],
+  answer: "Data Link Layer"
+},
+{
+  question: "What is the time complexity of inserting an element into a balanced binary search tree (BST) with *n* nodes?",
+  options: ["0(1)", "O(log n)", "O(n)", "O(n log n)"],
+  answer: "O(log n)"
+},
+{
+  question: "Which scheduling algorithm guarantees the shortest average waiting time for processes?",
+  options: ["First-Come, First-Served (FCFS)", "Shortest Job Next (SJN)", "Round Robin", "Priority Scheduling"],
+  answer: "Shortest Job Next (SJN)"
+},
+{
+  question: "In the Agile methodology, what is the primary purpose of a 'sprint retrospective'?",
+  options: ["To plan the next sprint", "To review completed work and improve processes", "To demonstrate the product to stakeholders", "To write technical documentation"],
+  answer: "To review completed work and improve processes"
+},
+{
+  question: "Which search algorithm is guaranteed to find the shortest path in an unweighted graph?",
+  options: ["Depth-First Search (DFS)", "Breadth-First Search (BFS)", "A* Search", "Greedy Best-First Search"],
+  answer: "Breadth-First Search (BFS)"
+},
+{
+  question: "What type of attack exploits a buffer overflow vulnerability to execute arbitrary code?",
+  options: ["SQL Injection", "Cross-Site Scripting (XSS)", "Denial-of-Service (DoS)", "Stack Smashing"],
+  answer: "Stack Smashing"
+},
+{
+  question: "During which phase of compilation is syntax analysis performed?",
+  options: ["Lexical Analysis", "Semantic Analysis", "Syntax Analysis", "Code Optimization"],
+  answer: "Syntax Analysis"
+},
+{
+  question: "Which normal form eliminates transitive dependencies?",
+  options: ["1NF", "2NF", "3NF", "BCNF"],
+  answer: "3NF"
+},
+{
+  question: "In SQL, which command is used to revoke user privileges?",
+  options: ["'REMOVE'", "'REVOKE", "'DELETE'", "DENY'"],
+  answer: "'REVOKE'"
+},
+{
+  question: "What is the purpose of an index in a database?",
+  options: ["To enforce referential integrity", "To speed up data retrieval", "To store backup data", "To define table relationships"],
+  answer: "To speed up data retrieval"
+},
+{
+  question: "Which join returns all rows from both tables, filling in NULLs where no match exists?",
+  options: ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+  answer: "FULL OUTER JOIN"
+},
+{
+  question: "What does ACID stand for in database transactions?",
+  options: ["Atomicity, Consistency, Isolation, Durability", "Accuracy, Consistency, Integrity, Durability", "Atomicity, Concurrency, Integrity, Durability", "Availability, Consistency, Isolation, Durability"],
+  answer: "Atomicity, Consistency, Isolation, Durability"
+},
+{
+  question: "Which NoSQL database type is optimized for key-value storage?",
+  options: ["MongoDB", "Redis", "Cassandra", "Neo4j"],
+  answer: "Redis"
+},
+{
+  question: "What is a deadlock in a database?",
+  options: ["A transaction that never completes", "Two or more transactions waiting indefinitely for each other to release locks", "A corrupted database file", "A query that runs too long"],
+  answer: "Two or more transactions waiting indefinitely for each other to release locks"
+},
+{
+  question: "Which SQL clause filters groups in a 'GROUP BY' query?",
+  options: ["'WHERE'", "'HAVING", "'FILTER'", "LIMIT'"],
+  answer: "'HAVING'"
+},
+{
+  question: "What is the default isolation level in most relational databases?",
+  options: ["Read Uncommitted", "Read Committed", "Repeatable Read", "Serializable"],
+  answer: "Read Committed"
+},
+{
+  question: "Which database model represents data as nodes and edges?",
+  options: ["Relational", "Document", "Graph", "Columnar"],
+  answer: "Graph"
+},
+{
+  question: "What is the main advantage of encapsulation?",
+  options: ["Code reusability", "Data hiding and security", "Faster execution", "Reduced memory usage"],
+  answer: "Data hiding and security"
+},
+{
+  question: "Which keyword allows a subclass to access superclass methods?",
+  options: ["'this'", "'super", "'extends'", "'implements'"],
+  answer: "'super`"
+},
+{
+  question: "What is method overriding?",
+  options: ["Defining multiple methods with the same name in a class", "Providing a new implementation for an inherited method", "Calling a method from another class", "Hiding a method from subclasses"],
+  answer: "Providing a new implementation for an inherited method"
+},
+{
+  question: "Which design pattern ensures only one instance of a class exists?",
+  options: ["Factory", "Singleton", "Observer", "Strategy"],
+  answer: "Singleton"
+},
+{
+  question: "What is the output of 'System.out.println(5 + \"5\")' in Java?",
+  options: ["10", "55", "\"55\"", "Compilation error"],
+  answer: "55"
+},
+{
+  question: "Which principle suggests that a class should have only one reason to change?",
+  options: ["DRY (Don't Repeat Yourself)", "KISS (Keep It Simple, Stupid)", "SOLID's Single Responsibility Principle", "YAGNI (You Aren't Gonna Need It)"],
+  answer: "SOLID's Single Responsibility Principle"
+},
+{
+  question: "What is dynamic binding?",
+  options: ["Linking method calls at compile time", "Linking method calls at runtime", "Binding variables to types", "Binding classes to interfaces"],
+  answer: "Linking method calls at runtime"
+},
+{
+  question: "Which keyword prevents a method from being overridden?",
+  options: ["'static'", "'final", "`private`", "sealed"],
+  answer: "'final"
+},
+{
+  question: "What is an abstract class?",
+  options: ["A class that cannot be instantiated", "A class with only static methods", "A class with no methods", "A class that implements an interface"],
+  answer: "A class that cannot be instantiated"
+},
+{
+  question: "Which exception is thrown when dividing an integer by zero in Java?",
+  options: ["NullPointerException", "'ArithmeticException", "DivideByZeroException", "'RuntimeException"],
+  answer: "'ArithmeticException"
+},
+{
+  question: "What is the function of the ALU in a CPU?",
+  options: ["Store data", "Perform arithmetic and logic operations", "Manage I/O operations", "Control program flow"],
+  answer: "Perform arithmetic and logic operations"
+},
+{
+  question: "Which cache mapping technique uses a hash function to determine location?",
+  options: ["Direct-mapped", "Fully associative", "Set-associative", "Random mapping"],
+  answer: "Direct-mapped"
+},
+{
+  question: "What is pipelining in processor design?",
+  options: ["Executing multiple instructions simultaneously in stages", "Increasing clock speed", "Using multiple cores", "Reducing power consumption"],
+  answer: "Executing multiple instructions simultaneously in stages"
+},
+{
+  question: "Which register holds the address of the next instruction to execute?",
+  options: ["Accumulator", "Program Counter (PC)", "Instruction Register (IR)", "Memory Address Register (MAR)"],
+  answer: "Program Counter (PC)"
+},
+{
+  question: "What is the purpose of virtual memory?",
+  options: ["To increase RAM speed", "To allow programs to use more memory than physically available", "To replace cache memory", "To store BIOS settings"],
+  answer: "To allow programs to use more memory than physically available"
+},
+{
+  question: "Which bus carries data between CPU and memory?",
+  options: ["Address bus", "Data bus", "Control bus", "System bus"],
+  answer: "Data bus"
+},
+{
+  question: "What is a hazard in computer architecture?",
+  options: ["A hardware failure", "A situation that prevents the next instruction from executing", "A security vulnerability", "A power surge"],
+  answer: "A situation that prevents the next instruction from executing"
+},
+{
+  question: "Which memory type is fastest?",
+  options: ["HDD", "SSD", "RAM", "L1 Cache"],
+  answer: "L1 Cache"
+},
+{
+  question: "What does RISC stand for?",
+  options: ["Reduced Instruction Set Computer", "Random Instruction Set Computing", "Rapid Instruction Sequencing", "Redundant Instruction Set Code"],
+  answer: "Reduced Instruction Set Computer"
+},
+{
+  question: "Which component manages interrupts in a CPU?",
+  options: ["ALU", "Control Unit", "MMU", "Interrupt Controller"],
+  answer: "Interrupt Controller"
+},
+{
+  question: "Which protocol assigns IP addresses dynamically?",
+  options: ["HTTP", "DHCP", "DNS", "FTP"],
+  answer: "DHCP"
+},
+{
+  question: "What is the purpose of a subnet mask?",
+  options: ["To encrypt data", "To define network and host portions of an IP address", "To route packets between networks", "To filter spam"],
+  answer: "To define network and host portions of an IP address"
+},
+{
+  question: "Which layer of the OSI model handles routing?",
+  options: ["Physical", "Data Link", "Network", "Transport"],
+  answer: "Network"
+},
+{
+  question: "What does TCP ensure that UDP does not?",
+  options: ["Faster transmission", "Error checking and retransmission", "Multicasting", "Lower latency"],
+  answer: "Error checking and retransmission"
+},
+{
+  question: "Which device operates at the Data Link layer?",
+  options: ["Router", "Switch", "Hub", "Repeater"],
+  answer: "Switch"
+},
+{
+  question: "What is the default port for HTTPS?",
+  options: ["80", "443", "22", "53"],
+  answer: "443"
+},
+{
+  question: "Which topology connects all devices to a central hub?",
+  options: ["Bus", "Star", "Ring", "Mesh"],
+  answer: "Star"
+},
+{
+  question: "What is NAT used for?",
+  options: ["Encrypting traffic", "Translating private IPs to public IPs", "Blocking malware", "Assigning MAC addresses"],
+  answer: "Translating private IPs to public IPs"
+},
+{
+  question: "Which wireless standard operates at 5 GHz?",
+  options: ["802.11a", "802.11b", "802.11g", "802.11n"],
+  answer: "802.11a"
+},
+{
+  question: "What does ICMP stand for?",
+  options: ["Internet Control Message Protocol", "Internet Configuration Management Protocol", "Integrated Communication Management Protocol", "Internal Control Message Packet"],
+  answer: "Internet Control Message Protocol"
+},
+{
+  question: "What is the worst-case time complexity of quicksort?",
+  options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+  answer: "O(n²)"
+},
+{
+  question: "Which data structure uses LIFO order?",
+  options: ["Queue", "Stack", "Linked List", "Tree"],
+  answer: "Stack"
+},
+{
+  question: "What is a hash collision?",
+  options: ["Two keys hashing to the same index", "A hash table overflow", "A broken hash function", "A mismatch in hash sizes"],
+  answer: "Two keys hashing to the same index"
+},
+{
+  question: "Which algorithm finds the shortest path in a weighted graph with no negative edges?",
+  options: ["Dijkstra's", "Bellman-Ford", "Floyd-Warshall", "Kruskal's"],
+  answer: "Dijkstra's"
+},
+{
+  question: "What is the space complexity of merge sort?",
+  options: ["0(1)", "O(n)", "O(log n)", "O(n²)"],
+  answer: "O(n)"
+},
+{
+  question: "Which traversal visits root, left, right in a binary tree?",
+  options: ["Inorder", "Preorder", "Postorder", "Level-order"],
+  answer: "Preorder"
+},
+{
+  question: "What is the purpose of a sentinel node in a linked list?",
+  options: ["To mark the end", "To simplify insertion/deletion", "To store metadata", "To improve search speed"],
+  answer: "To simplify insertion/deletion"
+},
+{
+  question: "Which data structure is best for priority queues?",
+  options: ["Array", "Linked List", "Heap", "Stack"],
+  answer: "Heap"
+},
+{
+  question: "What is the time complexity of binary search?",
+  options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+  answer: "O(log n)"
+},
+{
+  question: "Which sorting algorithm is stable?",
+  options: ["Quicksort", "Heapsort", "Merge sort", "Selection sort"],
+  answer: "Merge sort"
+},
+  {
+  question: "Which HTML tag is used for hyperlinks?",
+  options: ["<a>", "'<link>`", "'<href>", "'<url>'"],
+  answer: "<a>"
+},
+{
+  question: "What does CSS stand for?",
+  options: ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style System", "Centralized Styling Service"],
+  answer: "Cascading Style Sheets"
+},
+{
+  question: "Which JavaScript function delays execution for a specified time?",
+  options: ["`setInterval()`", "'setTimeout()", "'wait()", "`delay()`"],
+  answer: "'setTimeout()"
+},
+{
+  question: "What is the purpose of the '<div>' tag?",
+  options: ["To define a section", "To create a list", "To insert an image", "To add a hyperlink"],
+  answer: "To define a section"
+},
+{
+  question: "Which HTTP method is used to submit form data?",
+  options: ["GET", "POST", "PUT", "DELETE"],
+  answer: "POST"
+},
+{
+    question: "What is a race condition?",
+    options: ["A deadlock", "Unpredictable behavior due to concurrent access", "A memory leak", "A CPU overheating issue"],
+    answer: "Unpredictable behavior due to concurrent access"
+  },
+  {
+    question: "Which page replacement algorithm replaces the least recently used page?",
+    options: ["FIFO", "LRU", "Optimal", "Random"],
+    answer: "LRU"
+  },
+  {
+    question: "What is the role of the kernel?",
+    options: ["Manage hardware and processes", "Provide a user interface", "Run applications", "Store files"],
+    answer: "Manage hardware and processes"
+  },
+  {
+    question: "Which command lists files in Linux?",
+    options: ["'dir", "'list'", "'Is", "'show'"],
+    answer: "'ls'"
+  },
+  {
+    question: "What is a zombie process?",
+    options: ["A process that consumes too much CPU", "A terminated process waiting for its parent to read its status", "A crashed process", "A process blocked on I/O"],
+    answer: "A terminated process waiting for its parent to read its status"
+  },
+  {
+    question: "What is the purpose of a UML diagram?",
+    options: ["To visualize system design", "To write code", "To debug programs", "To optimize databases"],
+    answer: "To visualize system design"
+  },
+
+{
   question: "Which of the following is NOT a fundamental data structure?",
   options: ["Array", "Linked List", "Tree", "Algorithm"],
   answer: "Algorithm"
