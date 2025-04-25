@@ -16,7 +16,18 @@ body {
     width: 80%;
     max-width: 600px;
   }
-  
+  .icon{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+  }
   h1 {
     text-align: center;
     color: #333;
