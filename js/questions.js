@@ -1,389 +1,866 @@
 const questions = [
   {
-    question: "Which of the following is NOT a fundamental data type in most programming languages?",
-    options: ["Integer", "Float", "Boolean", "String", "Structure"],
-    answer: "Structure"
+    question:
+      "Which one of the following is concerned with the meaning of a sentence in knowledge representation?",
+    options: ["Structure", "Computational aspect", "Semantics", "Syntax"],
+    answer: "Semantics",
   },
   {
-    question: "What is the purpose of a variable in programming?",
-    options: ["To store data values", "To define program functions", "To control the flow of execution", "To perform arithmetic operations"],
-    answer: "To store data values"
+    question:
+      "Which one of the following is an attack performed by wiretapping a network and illicitly copy files and programs?",
+    options: ["Interception", "Fabrication", "Interruption", "Modification"],
+    answer: "Interception",
   },
   {
-    question: "Which operator is used for assignment in most programming languages?",
-    options: ["==", "=", "+=", "->"],
-    answer: "="
+    question:
+      "If a company wants to develop a software for its use, and if the company wants partial functionality to be delivered to end users without unreasonable delay. Which software development process model is appropriate for such requirement?",
+    options: ["Waterfall", "Incremental", "Spiral", "Evolutionary"],
+    answer: "Incremental",
   },
   {
-    question: "What is a conditional statement used for?",
-    options: ["To repeat a block of code", "To execute a block of code only if a certain condition is true", "To define data structures", "To perform input and output operations"],
-    answer: "To execute a block of code only if a certain condition is true"
+    question: "Which one of the following cannot affect proper functioning of a system?",
+    options: [
+      "Improperly placed heater",
+      "Humidity",
+      "Lightning strikes",
+      "UPS(uninterruptible power supply)",
+    ],
+    answer: "UPS(uninterruptible power supply)",
   },
   {
-    question: "Which of the following is a common type of loop?",
-    options: ["If-else", "Switch", "While", "Function"],
-    answer: "While"
+    question:
+      "_________ is the process of selecting appropriate query execution strategy?",
+    options: [
+      "Query graph",
+      "Query optimization",
+      "Query tree",
+      "Query processing",
+    ],
+    answer: "Query optimization",
   },
   {
-    question: "What is the purpose of a function in programming?",
-    options: ["To store data", "To group a block of code that performs a specific task", "To control program execution speed", "To define variable types"],
-    answer: "To group a block of code that performs a specific task"
+    question:
+      "Let KPRIV-A and KPUB-A be private and public keys for Awgichew and KPRIV-M and KPUB-M are private and public keys for Meron respectively. If Awgichew would like to send secured message to Meron, which one of the following scenario is not correct if they are using asymmetric keys?",
+    options: [
+      "Awgichew uses Meron's private key KPRIV-M to encrypt his plain text",
+      "Awgichew uses his KPUB-A to encrypt his plain text",
+      "Meron can decode the encrypted text using her KPRIV-M",
+      "Meron can decode the scrambled text using her KPUB-M",
+    ],
+    answer: "Awgichew uses his KPUB-A to encrypt his plain text",
   },
   {
-    question: "What is the scope of a variable?",
-    options: ["The data type of the variable", "The value stored in the variable", "The region of the program where the variable can be accessed", "The size of the memory allocated to the variable"],
-    answer: "The region of the program where the variable can be accessed"
+    question:
+      "Which one of the following agents works by searching and matching the rules defined by percent and stored internal state?",
+    options: [
+      "Model-based reflex agent",
+      "Goal-based agent",
+      "Simple reflex agent",
+      "Utility based agent",
+    ],
+    answer: "Model-based reflex agent",
   },
   {
-    question: "What is an array?",
-    options: ["A single value stored in memory", "A collection of elements of the same data type stored in contiguous memory locations", "A way to define program functions", "A type of loop structure"],
-    answer: "A collection of elements of the same data type stored in contiguous memory locations"
+    question: "Which symbol is used to write a single line comment in JavaScript?",
+    options: ["<?", "<! >", "//", "&&"],
+    answer: "//",
   },
   {
-    question: "What is a pointer?",
-    options: ["A variable that stores a data value", "A variable that stores the memory address of another variable", "A way to define program flow", "A specific data type for storing addresses"],
-    answer: "A variable that stores the memory address of another variable"
+    question: "Which one of the following is correct about symmetric and asymmetric keys?",
+    options: [
+      "Both are authentication methods",
+      "Symmetric key requires the sender and receiver to have a public and private key",
+      "Asymmetric key requires the sender and receiver to have a public and private key",
+      "Both are recovery methods",
+    ],
+    answer: "Asymmetric key requires the sender and receiver to have a public and private key",
   },
   {
-    question: "What is the purpose of dynamic memory allocation?",
-    options: ["To allocate a fixed amount of memory at compile time", "To allocate memory during program execution as needed", "To optimize program speed", "To manage file input and output"],
-    answer: "To allocate memory during program execution as needed"
+    question:
+      "If you want to test individual sub-systems of software, which phase of software testing is appropriate?",
+    options: [
+      "Integration testing",
+      "Unit testing",
+      "System testing",
+      "Acceptance testing",
+    ],
+    answer: "Unit testing",
   },
   {
-    question: "What is a data structure?",
-    options: ["A way to store individual data items", "A specific format for inputting data", "A way to organize and store data to facilitate efficient access and modification", "A method for controlling program flow"],
-    answer: "A way to organize and store data to facilitate efficient access and modification"
+    question:
+      "Suppose you are administrating the network. You would like to know list of protocol on use, the foreign address and port numbers, the local address and port number and the state of the connection. Which command would you use to accomplish that?",
+    options: ["traceroute", "ipconfig", "netstart", "nslookup"],
+    answer: "netstart",
   },
   {
-    question: "Which of the following is a linear data structure?",
-    options: ["Tree", "Graph", "Stack", "Heap"],
-    answer: "Stack"
+    question:
+      "When we use a hash table data structure, our hash function should map the expected inputs (keys) as evenly as possible over its output range(indexes). This property of good hash function is known as",
+    options: ["Uniformity", "Determinism", "Continuity", "Data normalization"],
+    answer: "Uniformity",
+  },
+ 
+  {
+    question:
+      "Which one of the following is false about sequential and binary searching algorithm?",
+    options: [
+      "Binary searching algorithm can work on list of data which is stored in descending order",
+      "Sequential and binary searching algorithm are not equal in terms of memory efficiency",
+      "Sequential searching algorithm can work on sorted and unsorted list of data",
+      "Considering worst case analysis binary searching algorithm is faster than sequential searching on sorted data.",
+    ],
+    answer:
+      "Sequential searching algorithm can work on sorted and unsorted list of data",
   },
   {
-    question: "What is the principle of LIFO related to?",
-    options: ["Queue", "Stack", "Linked List", "Array"],
-    answer: "Stack"
+    question:
+      "Which of the following term refers to the number of symbols composing a string?",
+    options: ["Length", "Symbols", "Alphabet", "Word"],
+    answer: "Alphabet",
   },
   {
-    question: "What is the principle of FIFO related to?",
-    options: ["Stack", "Queue", "Tree", "Graph"],
-    answer: "Queue"
+    question:
+      "_________ is a way of combining analogue or digital signals into one single over a common or shared medium.",
+    options: [
+      "Point-to-point",
+      "Broadcasting",
+      "Synchronization",
+      "Multicasting",
+    ],
+    answer: "Multicasting",
   },
   {
-    question: "What is a linked list?",
-    options: ["A contiguous block of memory storing data", "A collection of nodes where each node contains data and a pointer to the next node", "A data structure with a fixed size", "A way to implement recursive functions"],
-    answer: "A collection of nodes where each node contains data and a pointer to the next node"
+    question:
+      "Which generation's programming languages are used in Artificial intelligence and Expert systems?",
+    options: [
+      "Fifth generation languages",
+      "Second generation languages",
+      "Fourth generation languages",
+      "Third generation languages",
+    ],
+    answer: "Fifth generation languages",
   },
   {
-    question: "What is a tree data structure?",
-    options: ["A linear data structure", "A hierarchical data structure with a root node and child nodes", "A data structure where each element points to the previous one", "A data structure optimized for searching unsorted data"],
-    answer: "A hierarchical data structure with a root node and child nodes"
+    question:
+      "Which attribute of INPUT tag defines the number of characters that can be displayed in a text box without scrolling?",
+    options: ["SIZE", "MAXLENGTH", "VALUE", "TYPE"],
+    answer: "MAXLENGTH",
   },
   {
-    question: "What is a binary tree?",
-    options: ["A tree where each node has at most one child", "A tree where each node has exactly two children", "A tree where each node has at most two children", "A tree where nodes are ordered based on their values"],
-    answer: "A tree where each node has at most two children"
+    question:
+      "Which characteristics of requirement specify that the requirements should be phrased so that there is one and only one interpretation for it?",
+    options: ["Correct", "Unambiguous", "Feasible", "Verifiable"],
+    answer: "Unambiguous",
   },
   {
-    question: "What is a binary search tree?",
-    options: ["A binary tree where nodes are not ordered", "A binary tree where the left child is always greater than the parent", "A binary tree where the left child is less than or equal to the parent, and the right child is greater than the parent", "A balanced binary tree"],
-    answer: "A binary tree where the left child is less than or equal to the parent, and the right child is greater than the parent"
+    question:
+      "Which method can be used to divide a browser into smaller sub windows so that each sub window displaying a different HTML document?",
+    options: ["Using paragraphs", "Using frames", "Using images", "Using tables"],
+    answer: "Using frames",
   },
   {
-    question: "What is a graph data structure?",
-    options: ["A linear collection of data", "A hierarchical structure with a single root", "A collection of nodes (vertices) and edges that connect them", "A data structure optimized for storing key-value pairs"],
-    answer: "A collection of nodes (vertices) and edges that connect them"
+    question:
+      "Which one of the following is not correct when mapping ER diagrams to relational tables?",
+    options: [
+      "Multi-valued attributes are mapped to new tables",
+      "Foreign key are used to map relationships to create relation between tables",
+      "Table names are directly mapped from entity names",
+      "Composite attribute are mapped as it is",
+    ],
+    answer: "Table names are directly mapped from entity names",
   },
   {
-    question: "What is an algorithm?",
-    options: ["A specific programming language", "A set of well-defined instructions for solving a problem", "A type of data structure", "A hardware component of a computer"],
-    answer: "A set of well-defined instructions for solving a problem"
+    question:
+      "Which data update allows data item to be updated the moment it is modified in cache?",
+    options: [
+      "In-Place Update",
+      "Immediate update",
+      "Shadow update",
+      "Deferred update",
+    ],
+    answer: "Immediate update",
   },
   {
-    question: "What is time complexity of an algorithm?",
-    options: ["The amount of memory an algorithm uses", "The speed at which an algorithm executes on a specific machine", "A measure of the amount of time an algorithm takes to run as a function of the input size", "The number of lines of code in an algorithm"],
-    answer: "A measure of the amount of time an algorithm takes to run as a function of the input size"
+    question:
+      "Which mutual exclusion mechanism keeps track of turns to enter the critical region using an integer variable, which is initially-0, and another process waits until it turns to 1?",
+    options: [
+      "Lock variable",
+      "Disabling interrupts",
+      "Strict alteration",
+      "Race condition",
+    ],
+    answer: "Lock variable",
+  },
+ 
+
+  {
+    question:
+      "Uses the knowledge of the characteristics of the relational algebra operations and the relationship between the operators to optimize the query?",
+    options: [
+      "Database approach",
+      "Heuristic approach",
+      "Deterministic approach",
+      "Hierarchical data model approach",
+    ],
+    answer: "Database approach",
   },
   {
-    question: "What is space complexity of an algorithm?",
-    options: ["The time it takes for an algorithm to run", "The amount of memory an algorithm uses as a function of the input size", "The number of loops in an algorithm", "The complexity of the logic within an algorithm"],
-    answer: "The amount of memory an algorithm uses as a function of the input size"
+    question:
+      "Which one of the following is correct ordering in language processing system?",
+    options: [
+      "Source program ->Preprocessor -> Assembler -> Compiler Linker/Loader -> target machine code",
+      "Source program -> Preprocessor ->Linker/Loader -> Compiler/Assembler ->target machine code",
+      "Source program Compiler -> Assembler -> Preprocessor > Linker/Loader -> target machine code",
+      "Source program > Preprocessor -> Compiler -> Assembler -> Linker/Loader -> target machine code",
+    ],
+    answer:
+      "Source program ->Preprocessor -> Assembler -> Compiler Linker/Loader -> target machine code",
   },
   {
-    question: "What is the time complexity of linear search in the worst case?",
-    options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
-    answer: "O(n)"
+    question:
+      "Which one of the following is a wrong coupling of problem and its environment?",
+    options: [
+      "Contingency problem -> partially observable, non-deterministic",
+      "Multiple state problem deterministic, partially observable",
+      "Exploration problem -> partially observable, deterministic",
+      "Single state problem-> fully observable, deterministic",
+    ],
+    answer: "Multiple state problem deterministic, partially observable",
   },
   {
-    question: "What is the time complexity of binary search in the worst case?",
-    options: ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
-    answer: "O(log n)"
+    question:
+      "Which one of the following is responsible for controlling the flow of bits between memory and controllers with no need for a constant intervention from the CPU?",
+    options: [
+      "Disk fragmenting",
+      "Memo, manager",
+      "Device controller",
+      "Direct memory access",
+    ],
+    answer: "Direct memory access",
   },
   {
-    question: "What is the time complexity of bubble sort in the worst case?",
-    options: ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
-    answer: "O(n^2)"
+    question:
+      "A cryptographic program replaces an alphabet from a text message using its successor alphabet and creates cipher text. Which one best describes the program?",
+    options: [
+      "Transliteration",
+      "Translation",
+      "Transformation",
+      "Substitution",
+    ],
+    answer: "Substitution",
   },
   {
-    question: "What is the time complexity of merge sort in the worst case?",
-    options: ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
-    answer: "O(n log n)"
+    question:
+      'Which one of the following messaging communication best explains the statement: "Until the message is received, the sending process is blocked"?',
+    options: [
+      "Blocking receive",
+      "Non-block receive",
+      "Non-block sending",
+      "Blocking send",
+    ],
+    answer: "Blocking send",
   },
   {
-    question: "What is recursion?",
-    options: ["A loop that iterates a fixed number of times", "A function that calls itself", "A way to define data structures dynamically", "A method for handling errors in a program"],
-    answer: "A function that calls itself"
+    question:
+      "Which theory provides mechanisms for classifying combinatorial problems and measuring the computational resources necessary to solve them?",
+    options: [
+      "Computability theory",
+      "Set theory",
+      "Complexity theory",
+      "Automata theory",
+    ],
+    answer: "Complexity theory",
   },
   {
-    question: "What is a base case in a recursive function?",
-    options: ["The case that causes the function to call itself", "The condition that stops the recursion", "The initial value passed to the function", "The most complex part of the function"],
-    answer: "The condition that stops the recursion"
+    question:
+      'Which one of the following is correct first order logic for the statement "There is someone standing at the door and is tall"?',
+    options: [
+      "Vx (StandingAt (x; door)",
+      "Vx (StandingAt (x; door) ^tall(x)) ",
+      "∃x (StandingAt (x; door)^ tall(x))",
+      "∃x (StandingAt (x; door) -> toll(x))",
+    ],
+    answer: "∃x (StandingAt (x; door)^ tall(x))",
   },
   {
-    question: "What is object-oriented programming (OOP)?",
-    options: ["A programming paradigm focused on functions", "A programming paradigm based on the concept of 'objects' which can contain data and code", "A low-level programming approach", "A declarative programming style"],
-    answer: "A programming paradigm based on the concept of 'objects' which can contain data and code"
+    question:
+      "_________ is the component of the operating system that is responsible to decide which process to run first among ready processes.",
+    options: [
+      "Memory manager",
+      "Inter process communication",
+      "Disk manager",
+      "Scheduler",
+    ],
+    answer: "Scheduler",
   },
   {
-    question: "What is a class in OOP?",
-    options: ["An instance of an object", "A blueprint for creating objects", "A specific data type", "A function within an object"],
-    answer: "A blueprint for creating objects"
+    question:
+      "First design the very high level structure of the system. Then gradually work down to detailed decisions about low-level constructs. Which design approach follows the given strategy?",
+    options: ["Bottom-up", "System design", "Top-down", "Hybrid"],
+    answer: "Top-down",
   },
   {
-    question: "What is an object in OOP?",
-    options: ["A blueprint for creating classes", "An instance of a class", "A way to define program flow", "A fundamental data type"],
-    answer: "An instance of a class"
+    question: "Which one of the following is false regarding Exceptions in Java?",
+    options: [
+      "We cannot create our own exception classes  by extending Exception class",
+      "Exception class describes errors caused by your program and external circumstances",
+      "Runtime Exception class describes programming errors such as bad casting and numeric errors",
+      "All Java exception classes inherit directly or indirectly from Throwable class",
+    ],
+    answer:
+      "We cannot create our own exception classes  by extending Exception class",
   },
   {
-    question: "What is encapsulation in OOP?",
-    options: ["The ability of an object to take on many forms", "Hiding the implementation details of an object and exposing only the necessary interface", "The mechanism of inheriting properties from a parent class", "The interaction between different objects"],
-    answer: "Hiding the implementation details of an object and exposing only the necessary interface"
+    question: "A traditional phone call is an example of",
+    options: [
+      "Packet switching",
+      "Multiplexing",
+      "Broadcasting",
+      "Circuit switching",
+    ],
+    answer: "Circuit switching",
   },
   {
-    question: "What is inheritance in OOP?",
-    options: ["The ability of an object to take on many forms", "Hiding data within an object", "The mechanism by which a class can inherit properties and methods from a parent class", "The creation of objects from a class"],
-    answer: "The mechanism by which a class can inherit properties and methods from a parent class"
+    question: "Which one of the following is false about style sheets?",
+    options: [
+      "Style sheets increase accessibility",
+      "Style sheets creates consistent appearance",
+      "Style sheets make it easy to maintain HTML pages",
+      "Style sheets do not reduce web page file size",
+    ],
+    answer: "Style sheets do not reduce web page file size",
   },
   {
-    question: "What is polymorphism in OOP?",
-    options: ["The ability of an object to take on many forms", "Hiding the internal workings of an object", "The relationship between classes", "The process of creating objects"],
-    answer: "The ability of an object to take on many forms"
+    question: "Which one of the following is not correct about logic design?",
+    options: [
+      "It consider a particular DBMS",
+      "Normalization is undertaken in logical phase",
+      "It is based on specific data model",
+      "It is independent from physical considerations",
+    ],
+    answer: "It is independent from physical considerations",
   },
   {
-    question: "What is a constructor in a class?",
-    options: ["A method used to destroy an object", "A special method that is automatically called when an object of the class is created", "A method used to access private members of a class", "A method that performs the main logic of the class"],
-    answer: "A special method that is automatically called when an object of the class is created"
+    question: "Which one of the following is an attack detection mechanism?",
+    options: ["Physical control", "Audit log", "Password", "Encryption"],
+    answer: "Audit log",
   },
   {
-    question: "What is a destructor in a class (in languages that support it)?",
-    options: ["A method used to initialize an object", "A special method that is automatically called when an object is about to be destroyed", "A method used to modify the state of an object", "A method that returns information about the object"],
-    answer: "A special method that is automatically called when an object is about to be destroyed"
+    question:
+      "Which SQL command would you use if you want to specify constraints to be applied on tuples?",
+    options: ["GRANT", "SELECT", "REVOKE", "CHECK"],
+    answer: "CHECK",
   },
   {
-    question: "What is a file in computer programming?",
-    options: ["A temporary storage location in memory", "A named collection of related data stored on a persistent storage medium", "A way to define program functions", "A visual representation of data"],
-    answer: "A named collection of related data stored on a persistent storage medium"
+    question:
+      "Which data management approach allows application programs to define and manage their own data?",
+    options: [
+      "Manual approach",
+      "Database approach",
+      "Hierarchical approach",
+      "Traditional file based approach",
+    ],
+    answer: "Database approach",
   },
   {
-    question: "What is the purpose of file input/output (I/O)?",
-    options: ["To display information on the screen", "To read data from and write data to files", "To control the flow of program execution", "To perform mathematical calculations"],
-    answer: "To read data from and write data to files"
+    question: "What is the output of the following C++ fragment code? int p, q, n; $p=q=n=8; $ p+=n; $ p/=q cout<<p;",
+    options: ["16", "2", "24", "1"],
+    answer: "16",
   },
   {
-    question: "What is an exception in programming?",
-    options: ["A normal part of program execution", "An unexpected event that occurs during program execution that disrupts the normal flow of instructions", "A way to define new data types", "A type of loop that runs indefinitely"],
-    answer: "An unexpected event that occurs during program execution that disrupts the normal flow of instructions"
+    question: "Which database constraints are specified in the data definition language?",
+    options: [
+      "Implicit or inherent model based constraints",
+      "Semantic constraints",
+      "Application based constraints",
+      "Schema based constraints",
+    ],
+    answer: "Implicit or inherent model based constraints",
   },
   {
-    question: "What is exception handling?",
-    options: ["Ignoring errors that occur during runtime", "Writing code to gracefully handle exceptions and prevent program termination", "A way to define recursive functions", "A method for optimizing program performance"],
-    answer: "Writing code to gracefully handle exceptions and prevent program termination"
+    question:
+      "Which one of the following is a communication pathway connecting transmitting signals in binary digits between two or more devices?",
+    options: ["Memory", "Register", "CPU", "Bus"],
+    answer: "Bus",
   },
   {
-    question: "What is debugging?",
-    options: ["Writing code quickly without testing", "The process of finding and fixing errors in a program", "A way to optimize program speed", "A method for documenting code"],
-    answer: "The process of finding and fixing errors in a program"
+    question:
+      "Which one of the following sorting algorithm requires large memory space to sort data?",
+    options: ["Insertion sort", "Selection sort", "Merge sort", "Quick sort"],
+    answer: "Merge sort",
   },
   {
-    question: "What is a compiler?",
-    options: ["A program that executes code line by line", "A program that translates source code into machine code before execution", "A tool used for debugging code", "A program that manages files and directories"],
-    answer: "A program that translates source code into machine code before execution"
+    question:
+      "In which phase of the two phase locking protocol can a transaction obtain locks?",
+    options: ["Release phase", "Roll back phase", "Shrinking phase", "Growing phase"],
+    answer: "Growing phase",
   },
   {
-    question: "What is an interpreter?",
-    options: ["A program that translates source code into machine code all at once", "A program that executes code line by line", "A tool used for linking different parts of a program", "A program that optimizes code for better performance"],
-    answer: "A program that executes code line by line"
+    question: "Which one of the following is not the task of lexical analyzer?",
+    options: [
+      "Group characters into lexemes",
+      "Output a sequence of tokens",
+      "Read the input characters",
+      "Build syntax tree",
+    ],
+    answer: "Build syntax tree",
   },
   {
-    question: "What is a library in programming?",
-    options: ["A collection of books about programming", "A collection of pre-written code that provides reusable functions and routines", "A specific programming language syntax", "A tool for managing project files"],
-    answer: "A collection of pre-written code that provides reusable functions and routines"
+    question:
+      "Which one of the following best describes for a program that seems friendly and legitimate but contains hidden malicious codes and harms a system?",
+    options: ["Trojan", "Malware", "Virus", "Worm"],
+    answer: "Trojan",
   },
   {
-    question: "What is an API (Application Programming Interface)?",
-    options: ["A physical interface between hardware components", "A set of rules and protocols that allows different software applications to communicate with each other", "A type of operating system", "A graphical user interface for a program"],
-    answer: "A set of rules and protocols that allows different software applications to communicate with each other"
+    question: "Look at the following fragment code:  int a=6  int b=5  while(a>b) {  Cout<<\"computer science program\"<<endl;  } Which algorithm property is not satisfied by the above C++ code algorithm?",
+    options: ["Sequential", "Feasibility", "Finiteness", "Definiteness"],
+    answer: "Finiteness",
+  },
+  
+    {
+    question:
+      "Since internet communication is based on an IP address, the domain name has to be translated to its corresponding IP address. Which of the following is responsible for the translation?",
+    options: ["DNS", "SMTP", "FTP", "DHCP"],
+    answer: "DNS",
   },
   {
-    question: "What is version control?",
-    options: ["A way to manage different versions of a software project", "A method for compiling code", "A technique for debugging programs", "A type of software license"],
-    answer: "A way to manage different versions of a software project"
+    question:
+      "Which program puts together the entire executable object files into memory for execution or running?",
+    options: ["Editor", "Debugger", "Linker", "Loader"],
+    answer: "Linker",
   },
   {
-    question: "Which of the following is a popular version control system?",
-    options: ["Java", "Python", "Git", "HTML"],
-    answer: "Git"
+    question:
+      "Machine language is grouped under__________ generation of programming language.",
+    options: [
+      "2nd generation language",
+      "3rd generation language",
+      "4th generation language",
+      "1st generation language",
+    ],
+    answer: "1st generation language",
   },
   {
-    question: "What is a repository in version control?",
-    options: ["A temporary storage space for files", "A central location where all the files and their history for a project are stored", "A way to execute program code", "A tool for comparing different versions of a file"],
-    answer: "A central location where all the files and their history for a project are stored"
+    question:
+      "Which one of the following is not problem if concurrency is not controlled properly?",
+    options: [
+      "Lost update problem",
+      "Consistent database",
+      "Incorrect summary",
+      "Dirty read",
+    ],
+    answer: "Consistent database",
   },
   {
-    question: "What is a commit in version control?",
-    options: ["A way to discard changes", "A snapshot of the changes made to the codebase at a specific point in time", "A branch of development", "A remote server"],
-    answer: "A snapshot of the changes made to the codebase at a specific point in time"
+    question: "Which one of the following is false about the role of parser in compiling process?",
+    options: [
+      "Parser builds the parse tree",
+      "Parser attempts to correct or recover few errors",
+      "Parser cannot perform context free syntax analysis",
+      "Parser produces appropriate error messages",
+    ],
+    answer: "Parser cannot perform context free syntax analysis",
   },
-{
-  question: "What does HTML stand for?",
-  options: ["Hyper Text Markup Language", "High-level Text Manipulation Language", "Home Tool Management Language", "Hyperlink and Text Management Language"],
-  answer: "Hyper Text Markup Language"
-},
-{
-  question: "Which HTML tag is used to define the structure of an HTML document?",
-  options: ["<head>", "<title>", "<body>", "<html>"],
-  answer: "<html>"
-},
-{
-  question: "Which HTML tag is used to define the main content of an HTML document?",
-  options: ["<head>", "<title>", "<body>", "<div>"],
-  answer: "<body>"
-},
-{
-  question: "Which HTML tag is used to create a heading?",
-  options: ["<p>", "<h1>", "<span>", "<a>"],
-  answer: "<h1>"
-},
-{
-  question: "Which HTML tag is used to create a paragraph?",
-  options: ["<h1>", "<li>", "<p>", "<img>"],
-  answer: "<p>"
-},
-{
-  question: "Which HTML tag is used to create a hyperlink?",
-  options: ["<link>", "<href>", "<a>", "<url>"],
-  answer: "<a>"
-},
-{
-  question: "Which HTML attribute specifies the URL of a link?",
-  options: ["src", "href", "link", "url"],
-  answer: "href"
-},
-{
-  question: "Which HTML tag is used to display an image?",
-  options: ["<picture>", "<src>", "<img>", "<image>"],
-  answer: "<img>"
-},
-{
-  question: "Which HTML attribute specifies the source of an image?",
-  options: ["href", "url", "src", "link"],
-  answer: "src"
-},
-{
-  question: "Which HTML tag is used to create an unordered list?",
-  options: ["<ol>", "<li>", "<ul>", "<dl>"],
-  answer: "<ul>"
-},
-{
-  question: "Which HTML tag is used to create an ordered list?",
-  options: ["<ul>", "<li>", "<ol>", "<dl>"],
-  answer: "<ol>"
-},
-{
-  question: "Which HTML tag is used to define a list item?",
-  options: ["<ul>", "<ol>", "<list>", "<li>"],
-  answer: "<li>"
-},
-{
-  question: "What does CSS stand for?",
-  options: ["Cascading Style Sheets", "Creative Style System", "Computer Style Sheet", "Colorful Style System"],
-  answer: "Cascading Style Sheets"
-},
-{
-  question: "What is CSS primarily used for?",
-  options: ["Adding interactivity to web pages", "Defining the structure of web pages", "Styling the presentation of web pages", "Managing server-side logic"],
-  answer: "Styling the presentation of web pages"
-},
-{
-  question: "Which CSS property is used to change the text color of an element?",
-  options: ["font-color", "text-style", "color", "foreground-color"],
-  answer: "color"
-},
-{
-  question: "Which CSS property is used to change the background color of an element?",
-  options: ["bg-color", "background", "element-color", "color-background"],
-  answer: "background"
-},
-{
-  question: "Which CSS property is used to control the font size of text?",
-  options: ["text-size", "font", "size", "font-size"],
-  answer: "font-size"
-},
-{
-  question: "Which CSS property is used to add space inside an element's border?",
-  options: ["margin", "border-spacing", "padding", "spacing"],
-  answer: "padding"
-},
-{
-  question: "Which CSS property is used to add space outside an element's border?",
-  options: ["padding", "border-width", "margin", "outline"],
-  answer: "margin"
-},
-{
-  question: "What is JavaScript primarily used for in web development?",
-  options: ["Styling web pages", "Defining the structure of web pages", "Adding interactivity and dynamic behavior to web pages", "Managing server-side databases"],
-  answer: "Adding interactivity and dynamic behavior to web pages"
-},
-{
-  question: "Which keyword is used to declare a variable in JavaScript?",
-  options: ["variable", "int", "string", "let"],
-  answer: "let"
-},
-{
-  question: "Which JavaScript function is commonly used to display output in the console?",
-  options: ["alert()", "prompt()", "console.log()", "document.write()"],
-  answer: "console.log()"
-},
-{
-  question: "What is an event in JavaScript?",
-  options: ["A specific data type", "An action that occurs in the browser (e.g., a mouse click)", "A way to define functions", "A method for styling HTML elements"],
-  answer: "An action that occurs in the browser (e.g., a mouse click)"
-},
-{
-  question: "What is the DOM (Document Object Model)?",
-  options: ["A way to style HTML elements", "A programming interface for HTML and XML documents", "A language for querying databases", "A server-side scripting language"],
-  answer: "A programming interface for HTML and XML documents"
-},
-{
-  question: "Which JavaScript method is used to find an HTML element by its ID?",
-  options: ["getElementByClass()", "querySelector()", "getElementById()", "getElementByTag()"],
-  answer: "getElementById()"
-},
-{
-  question: "What is a function in JavaScript?",
-  options: ["A data type that stores multiple values", "A block of code designed to perform a specific task", "A way to style HTML elements dynamically", "An event that occurs on a web page"],
-  answer: "A block of code designed to perform a specific task"
-},
-{
-  question: "What is an array in JavaScript?",
-  options: ["A single value stored in memory", "An ordered list of values", "A way to define HTML elements", "A type of loop"],
-  answer: "An ordered list of values"
-},
-{
-  question: "What is an object in JavaScript?",
-  options: ["A primitive data type", "A collection of key-value pairs", "A way to define CSS styles", "A type of event listener"],
-  answer: "A collection of key-value pairs"
-},
+  {
+    question:
+      "A malicious program that once installed on your machine can collect all keystrokes including username, password, emails, credit card numbers and other sensitive information is:",
+    options: ["Rootkit", "Worms", "Key logger", "Trojan"],
+    answer: "Key logger",
+  },
+  {
+    question:
+      "Which memory is characterized by the need for periodic change in order to maintain data storage?",
+    options: ["Static RAM", "Dynamic RAM", "Disk", "Tape"],
+    answer: "Dynamic RAM",
+  },
+  {
+    question: "Which one of the following is not correct?",
+    options: [
+      "A rational agent know the result of its action, but unrealistic",
+      "Rational agent take action but not 100% sure of success",
+      "Rational agent act to achieve utmost success based on information",
+      "An omniscience agent takes actions for 100% sure of success",
+    ],
+    answer: "An omniscience agent takes actions for 100% sure of success",
+  },
+  {
+    question:
+      "What should compilers of high level programming languages do to evaluate expressions?",
+    options: [
+      "Convert infix notation to postfix notation",
+      "Convert postfix notation to prefix notation",
+      "Evaluate infix notation to prefix notation",
+      "Convert postfix to infix notation",
+    ],
+    answer: "Convert infix notation to postfix notation",
+  },
+  {
+    question: "________ finds the shortest path to the goal based on cost.",
+    options: [
+      "Depth first search",
+      "Iterative deepening",
+      "Uniform cost search",
+      "Breath first search",
+    ],
+    answer: "Uniform cost search",
+  },
+  {
+    question: "Which one of the following is not correct about magnetic disk?",
+    options: [
+      "Its minimum block is a sector",
+      "Its head is stationary during read/write",
+      "Its data is organized in tracks",
+      "It needs continuous power to keep bit contents",
+    ],
+    answer: "Its minimum block is a sector",
+  },
+  {
+    question: "Which one of the following is not correct about networking models?",
+    options: [
+      "TCP/IP model is a protocol model",
+      "A reference model has no implementation specification",
+      "A network designer can use either of TCP/IP or OSL, or both",
+      "Open system interconnection (OSI) is a protocol model",
+    ],
+    answer: "A reference model has no implementation specification",
+  },
+  {
+    question: "What will be the out of the following JavaScript statement? Math.abs(-9)",
+    options: ["9", "-9", "1", "0"],
+    answer: "9",
+  },
+  {
+    question: "Which one of the following is not correct about IPv4?",
+    options: [
+      "IT uses 128-bits",
+      "It has shortages of address space",
+      "It is characterized by slow routing and memory intensive",
+      "It uses 32-bits",
+    ],
+    answer: "IT uses 128-bits",
+  },
+  {
+    question: "Which one is true about the following JavaScript statement? Document.bgcolor",
+    options: [
+      "bgcolor is method",
+      "document is property",
+      "bgcolor is property",
+      "document is method",
+    ],
+    answer: "bgcolor is property",
+  },
+  {
+    question: "Which one of the following is not an example of divide and conquer algorithm?",
+    options: ["Quick sort", "Binary searching", "Merge sort", "Heap sort"],
+    answer: "Heap sort",
+  },
+  {
+    question:
+      "Which data structure is the most appropriate for sharing a printer in a network environment?",
+    options: ["Stack", "Binary search tree", "Full binary tree", "Queue"],
+    answer: "Queue",
+  },
+  {
+    question:
+      "Assuming there is a rectangle object, what getArea, getPerimeter can represent?",
+    options: ["Attribute", "Property", "Data field", "Behavior"],
+    answer: "Attribute",
+  },
+  {
+    question:
+      "Which one of the following is false about abstract classes and abstract methods?",
+    options: [
+      "We can create instances of abstract classes using the new operator",
+      "Implementation of abstract methods is provided by the subclasses",
+      "A class that contains abstract methods must be defined as abstract",
+      "Abstract methods are defined without implementation in the superclass",
+    ],
+    answer:
+      "We can create instances of abstract classes using the new operator",
+  },
+  {
+    question: "Look at the following PHP line:  $list = array(“outside” = > “red”,  “inside” = > “brown”,  “top” = > “black”,  “under” = > “blue”); What is the index of data value black?",
+    options: ["Brown", "Outside", "Under", "Top"],
+    answer: "Top",
+  },
+  {
+    question: "Which operator is used to create an array?",
+    options: ["new", "declare", "static", "construct"],
+    answer: "new",
+  },
+  {
+    question: "What is the output of the following C++ fragment code? a:  cout<<”Graduating “;  goto b;  c:  cout<<” Year “;  goto a;  b: cout<<”fourth “;",
+    options: [
+      "Graduating Year Fourth",
+      "Graduating Fourth Year",
+      "Year Fourth Graduating",
+      "Graduating Fourth Year",
+    ],
+    answer: "Graduating Year Fourth",
+  },
+  {
+    question: "What is the output of the following java fragment code? For (int i = 2; i < = 11; I = I + 2)  {  if(i%4 = = 0)  system.out.print(i*i) + “ “);  } ",
+    options: ["16 64 100 8 4", "4 16 36 64 100", "16 64 4 8 64", "4 8 16 64 4"],
+    answer: "4 16 36 64 100",
+  },
+  {
+    question: "Which one of the following is not transmission impairments?",
+    options: ["Synchronization", "Crosstalk", "Impulse", "Distortion"],
+    answer: "Synchronization",
+  },
+  {
+    question: "Look at the following fragment code: struct car {  char car_model[25];  float price; }; car *c1; Which one of the following is correct C++ statement?",
+    options: [
+      "Cout<<c1<<price;",
+      "Cin>>c1.car_model;",
+      "C1.price = 150000;",
+      "Cout<<c1 -> car_mode;",
+    ],
+    answer: "C1.price = 150000;",
+  },
+  {
+    question: "Which one of the following is false about client-side scripting?",
+    options: [
+      "Script languages are not full-featured",
+      "Script languages can access client’s hardware",
+      "Script languages have limited capabilities",
+      "Script languages are embedded as plain text, and interpreted by applications",
+    ],
+    answer: "Script languages can access client’s hardware",
+  },
+  {
+    question: "Which one of the following is true about Queue data structure?",
+    options: [
+      "Queue data structure applies first come first served policy",
+      "Queue data structure uses last in first out rule",
+      "Queue data structure does not have efficient basic operations",
+      "Queue data structure cannot be implemented using linked list",
+    ],
+    answer: "Queue data structure cannot be implemented using linked list",
+  },
+  {
+    question: "Which one of the following is not correct about IP address and DHCP",
+    options: [
+      "An IP leased by the DHCP for a host is permanent",
+      "DHCP assures connectivity ever users move from location to location",
+      "The IP address are chosen from a predetermined range of address",
+      "DHCP allows a host to acquire an IP address automatically",
+    ],
+    answer: "An IP leased by the DHCP for a host is permanent",
+  },
+  {
+    question:
+      "Which one of the following is not a condition for two operations in a schedule to  be said to conflict?",
+    options: [
+      "If they access the same item X",
+      "If they belong to the same transactions",
+      "If Write_item (X) is at least one of the operations",
+      "If they belong to different transactions",
+    ],
+    answer: "If they belong to different transactions",
+  },
+  {
+    question:
+      "In case of any shut down during transaction before commit which of the following statement is done  automatically?",
+    options: ["View", "Commit", "Rollback", "Flashback"],
+    answer: "Rollback",
+  },
+  {
+    question:
+      "Which one of the following commands is not used for removing (or deleting) a relation forms the SQL database?",
+    options: ["Delete", "Drop", "Remove", "UPDATE"],
+    answer: "UPDATE",
+  },
+  {
+    question:
+      "A system is in a ______ state if there exists a set of transactions such that every transaction in the set is waiting for another transaction in the set.",
+    options: ["Idle", "Waiting", "Deadlock", "Ready"],
+    answer: "Deadlock",
+  },
+  {
+    question: "What is a Functional Requirement?",
+    options: [
+      "specifies the tasks the program must complete",
+      "specifies the tasks the program should not complete",
+      "specifies the tasks the program must not work",
+      "All of the mentioned",
+    ],
+    answer: "All of the mentioned",
+  },
+  {
+    question:
+      "_________ is a software development life cycle model that is chosen if the development team has  less experience on similar projects.",
+    options: [
+      "Iterative Enhancement Model",
+      "RAD",
+      "Spiral",
+      "Waterfall",
+    ],
+    answer: "Waterfall",
+  },
+  {
+    question: "In which step of SDLC actual programming of software code is done?",
+    options: [
+      "Development and Documentation",
+      "Maintenance and Evaluation",
+      "Design",
+      "Analysis",
+    ],
+    answer: "Development and Documentation",
+  },
+  {
+    question: "Software Debugging is known as _________________",
+    options: [
+      "identifying the task to be computerized",
+      "creating program code",
+      "creating the algorithm",
+      "finding and correcting errors in the program code",
+    ],
+    answer: "finding and correcting errors in the program code",
+  },
+  {
+    question:
+      "_____________ is a probabilistic algorithm where a data packet is sent by the router to any one of its neighbors randomly.",
+    options: [
+      "Adaptive routing algorithm",
+      "Flooding routing algorithm",
+      "Random walks routing algorithm",
+      "Distributed routing algorithm",
+    ],
+    answer: "Random walks routing algorithm",
+  },
+  {
+    question:
+      "Which network address translation protocol solves the task of address resolution using port number?",
+    options: [
+      "Network Address Translation",
+      "Port Address Translation",
+      "Dynamic Address Translation",
+      "Static address translation",
+    ],
+    answer: "Port Address Translation",
+  },
+  {
+    question:
+      "_____________ is responsible for converting the higher level protocol addresses to physical Network  Addresses.",
+    options: [
+      "Address Resolution Protocol (ARP)",
+      "Reverse Address Resolution Protocol (RARP)",
+      "Bootstrap Protocol (BOOTP)",
+      "Internet Control Message Protocol (ICMP)",
+    ],
+    answer: "Address Resolution Protocol (ARP)",
+  },
+  {
+    question: "Given the network address of 172.16.0.0/19, which of the following is correct?",
+    options: [
+      "It provides 8 subnets, 32 IP addresses each",
+      "It provides 8 subnets, 8,190 hosts each",
+      "It provides 8 subnets, 30 hosts each",
+      "It provides 8 subnets, 2,046 IP addresses each",
+    ],
+    answer: "It provides 8 subnets, 32 IP addresses each",
+  },
+  {
+    question:
+      "A network device that provides the physical interface between computer and cabling is known as________.",
+    options: ["Switch", "Router", "NIC", "Repeater"],
+    answer: "NIC",
+  },
+  {
+    question: "Which of the following is not the function of DHCP server?",
+    options: [
+      "It grants an IP address when receives a request from a client.",
+      "It maintains the information about client configuration parameters.",
+      "It maintains a database of available IP addresses.",
+      "It grants an IP address when sender request from a client.",
+    ],
+    answer: "It grants an IP address when sender request from a client.",
+  },
+  {
+    question: "Which one of the following is not true?",
+    options: [
+      "kernel is the program that constitutes the central core of the operating system",
+      "kernel is the first part of operating system to load into memory during booting",
+      "kernel is made of various modules which cannot be loaded in running operating system",
+      "kernel remains in the memory during the entire computer session",
+    ],
+    answer:
+      "kernel is made of various modules which cannot be loaded in running operating system",
+  },
+  {
+    question:
+      "Which one of the following circuits requires memory to store the state of the output?",
+    options: [
+      "Combinational circuit",
+      "Sequential circuits",
+      "Logical circuit",
+      "Physical circuit",
+    ],
+    answer: "Sequential circuits",
+  },
+  {
+    question: "From the following grammars, which describes the lexical syntax?",
+    options: [
+      "Lexical Grammar",
+      "Context-free Grammar",
+      "Syntactic Grammar",
+      "Regular Grammar",
+    ],
+    answer: "Context-free Grammar",
+  },
+  {
+    question: "What is not a Functional Requirement?",
+    options: [
+      "specifies the tasks the program must complete",
+      "specifies the tasks the program should not complete",
+      "specifies the tasks the program must not work",
+      "doesn’t specifies the tasks the program must not work",
+    ],
+    answer: "doesn’t specifies the tasks the program must not work",
+  },
+  {
+    question:
+      "_________ is a software development life cycle model that is chosen if the development team has  less experience on similar projects.",
+    options: [
+      "Iterative Enhancement Model",
+      "RAD",
+      "Spiral",
+      "Waterfall",
+    ],
+    answer: "Waterfall",
+  },
+  {
+    question: "In which step of SDLC actual programming of software code is done?",
+    options: [
+      "Development and Documentation",
+      "Maintenance and Evaluation",
+      "Design",
+      "Analysis",
+    ],
+    answer: "Development and Documentation",
+  },
+  {
+    question: "Software Debugging is known as _________________",
+    options: [
+      "identifying the task to be computerized",
+      "creating program code",
+      "creating the algorithm",
+      "finding and correcting errors in the program code",
+    ],
+    answer: "finding and correcting errors in the program code",
+  },
+  {
+    question:
+      "Which of the following is the understanding of software product limitations, learning system  related problems or changes to be done in existing systems beforehand, identifying and addressing the impact of project on organization and personnel etc.?",
+    options: [
+      "Software Design",
+      "Feasibility Study",
+      "Requirement Gathering",
+      "System Analysis",
+],
+    answer: "Feasibility Study",
+  },
+
 {
   question: "What is JSON (JavaScript Object Notation)?",
   options: ["A JavaScript library for DOM manipulation", "A lightweight data-interchange format", "A CSS framework", "A server-side JavaScript runtime environment"],
