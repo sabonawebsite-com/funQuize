@@ -1,5 +1,887 @@
 const questions = [
- 
+  {
+    question: "Which of the following is NOT a fundamental data type in most programming languages?",
+    options: ["Integer", "Float", "Boolean", "String", "Structure"],
+    answer: "Structure"
+  },
+  {
+    question: "What is the purpose of a variable in programming?",
+    options: ["To store data values", "To define program functions", "To control the flow of execution", "To perform arithmetic operations"],
+    answer: "To store data values"
+  },
+  {
+    question: "Which operator is used for assignment in most programming languages?",
+    options: ["==", "=", "+=", "->"],
+    answer: "="
+  },
+  {
+    question: "What is a conditional statement used for?",
+    options: ["To repeat a block of code", "To execute a block of code only if a certain condition is true", "To define data structures", "To perform input and output operations"],
+    answer: "To execute a block of code only if a certain condition is true"
+  },
+  {
+    question: "Which of the following is a common type of loop?",
+    options: ["If-else", "Switch", "While", "Function"],
+    answer: "While"
+  },
+  {
+    question: "What is the purpose of a function in programming?",
+    options: ["To store data", "To group a block of code that performs a specific task", "To control program execution speed", "To define variable types"],
+    answer: "To group a block of code that performs a specific task"
+  },
+  {
+    question: "What is the scope of a variable?",
+    options: ["The data type of the variable", "The value stored in the variable", "The region of the program where the variable can be accessed", "The size of the memory allocated to the variable"],
+    answer: "The region of the program where the variable can be accessed"
+  },
+  {
+    question: "What is an array?",
+    options: ["A single value stored in memory", "A collection of elements of the same data type stored in contiguous memory locations", "A way to define program functions", "A type of loop structure"],
+    answer: "A collection of elements of the same data type stored in contiguous memory locations"
+  },
+  {
+    question: "What is a pointer?",
+    options: ["A variable that stores a data value", "A variable that stores the memory address of another variable", "A way to define program flow", "A specific data type for storing addresses"],
+    answer: "A variable that stores the memory address of another variable"
+  },
+  {
+    question: "What is the purpose of dynamic memory allocation?",
+    options: ["To allocate a fixed amount of memory at compile time", "To allocate memory during program execution as needed", "To optimize program speed", "To manage file input and output"],
+    answer: "To allocate memory during program execution as needed"
+  },
+  {
+    question: "What is a data structure?",
+    options: ["A way to store individual data items", "A specific format for inputting data", "A way to organize and store data to facilitate efficient access and modification", "A method for controlling program flow"],
+    answer: "A way to organize and store data to facilitate efficient access and modification"
+  },
+  {
+    question: "Which of the following is a linear data structure?",
+    options: ["Tree", "Graph", "Stack", "Heap"],
+    answer: "Stack"
+  },
+  {
+    question: "What is the principle of LIFO related to?",
+    options: ["Queue", "Stack", "Linked List", "Array"],
+    answer: "Stack"
+  },
+  {
+    question: "What is the principle of FIFO related to?",
+    options: ["Stack", "Queue", "Tree", "Graph"],
+    answer: "Queue"
+  },
+  {
+    question: "What is a linked list?",
+    options: ["A contiguous block of memory storing data", "A collection of nodes where each node contains data and a pointer to the next node", "A data structure with a fixed size", "A way to implement recursive functions"],
+    answer: "A collection of nodes where each node contains data and a pointer to the next node"
+  },
+  {
+    question: "What is a tree data structure?",
+    options: ["A linear data structure", "A hierarchical data structure with a root node and child nodes", "A data structure where each element points to the previous one", "A data structure optimized for searching unsorted data"],
+    answer: "A hierarchical data structure with a root node and child nodes"
+  },
+  {
+    question: "What is a binary tree?",
+    options: ["A tree where each node has at most one child", "A tree where each node has exactly two children", "A tree where each node has at most two children", "A tree where nodes are ordered based on their values"],
+    answer: "A tree where each node has at most two children"
+  },
+  {
+    question: "What is a binary search tree?",
+    options: ["A binary tree where nodes are not ordered", "A binary tree where the left child is always greater than the parent", "A binary tree where the left child is less than or equal to the parent, and the right child is greater than the parent", "A balanced binary tree"],
+    answer: "A binary tree where the left child is less than or equal to the parent, and the right child is greater than the parent"
+  },
+  {
+    question: "What is a graph data structure?",
+    options: ["A linear collection of data", "A hierarchical structure with a single root", "A collection of nodes (vertices) and edges that connect them", "A data structure optimized for storing key-value pairs"],
+    answer: "A collection of nodes (vertices) and edges that connect them"
+  },
+  {
+    question: "What is an algorithm?",
+    options: ["A specific programming language", "A set of well-defined instructions for solving a problem", "A type of data structure", "A hardware component of a computer"],
+    answer: "A set of well-defined instructions for solving a problem"
+  },
+  {
+    question: "What is time complexity of an algorithm?",
+    options: ["The amount of memory an algorithm uses", "The speed at which an algorithm executes on a specific machine", "A measure of the amount of time an algorithm takes to run as a function of the input size", "The number of lines of code in an algorithm"],
+    answer: "A measure of the amount of time an algorithm takes to run as a function of the input size"
+  },
+  {
+    question: "What is space complexity of an algorithm?",
+    options: ["The time it takes for an algorithm to run", "The amount of memory an algorithm uses as a function of the input size", "The number of loops in an algorithm", "The complexity of the logic within an algorithm"],
+    answer: "The amount of memory an algorithm uses as a function of the input size"
+  },
+  {
+    question: "What is the time complexity of linear search in the worst case?",
+    options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    answer: "O(n)"
+  },
+  {
+    question: "What is the time complexity of binary search in the worst case?",
+    options: ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+    answer: "O(log n)"
+  },
+  {
+    question: "What is the time complexity of bubble sort in the worst case?",
+    options: ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
+    answer: "O(n^2)"
+  },
+  {
+    question: "What is the time complexity of merge sort in the worst case?",
+    options: ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
+    answer: "O(n log n)"
+  },
+  {
+    question: "What is recursion?",
+    options: ["A loop that iterates a fixed number of times", "A function that calls itself", "A way to define data structures dynamically", "A method for handling errors in a program"],
+    answer: "A function that calls itself"
+  },
+  {
+    question: "What is a base case in a recursive function?",
+    options: ["The case that causes the function to call itself", "The condition that stops the recursion", "The initial value passed to the function", "The most complex part of the function"],
+    answer: "The condition that stops the recursion"
+  },
+  {
+    question: "What is object-oriented programming (OOP)?",
+    options: ["A programming paradigm focused on functions", "A programming paradigm based on the concept of 'objects' which can contain data and code", "A low-level programming approach", "A declarative programming style"],
+    answer: "A programming paradigm based on the concept of 'objects' which can contain data and code"
+  },
+  {
+    question: "What is a class in OOP?",
+    options: ["An instance of an object", "A blueprint for creating objects", "A specific data type", "A function within an object"],
+    answer: "A blueprint for creating objects"
+  },
+  {
+    question: "What is an object in OOP?",
+    options: ["A blueprint for creating classes", "An instance of a class", "A way to define program flow", "A fundamental data type"],
+    answer: "An instance of a class"
+  },
+  {
+    question: "What is encapsulation in OOP?",
+    options: ["The ability of an object to take on many forms", "Hiding the implementation details of an object and exposing only the necessary interface", "The mechanism of inheriting properties from a parent class", "The interaction between different objects"],
+    answer: "Hiding the implementation details of an object and exposing only the necessary interface"
+  },
+  {
+    question: "What is inheritance in OOP?",
+    options: ["The ability of an object to take on many forms", "Hiding data within an object", "The mechanism by which a class can inherit properties and methods from a parent class", "The creation of objects from a class"],
+    answer: "The mechanism by which a class can inherit properties and methods from a parent class"
+  },
+  {
+    question: "What is polymorphism in OOP?",
+    options: ["The ability of an object to take on many forms", "Hiding the internal workings of an object", "The relationship between classes", "The process of creating objects"],
+    answer: "The ability of an object to take on many forms"
+  },
+  {
+    question: "What is a constructor in a class?",
+    options: ["A method used to destroy an object", "A special method that is automatically called when an object of the class is created", "A method used to access private members of a class", "A method that performs the main logic of the class"],
+    answer: "A special method that is automatically called when an object of the class is created"
+  },
+  {
+    question: "What is a destructor in a class (in languages that support it)?",
+    options: ["A method used to initialize an object", "A special method that is automatically called when an object is about to be destroyed", "A method used to modify the state of an object", "A method that returns information about the object"],
+    answer: "A special method that is automatically called when an object is about to be destroyed"
+  },
+  {
+    question: "What is a file in computer programming?",
+    options: ["A temporary storage location in memory", "A named collection of related data stored on a persistent storage medium", "A way to define program functions", "A visual representation of data"],
+    answer: "A named collection of related data stored on a persistent storage medium"
+  },
+  {
+    question: "What is the purpose of file input/output (I/O)?",
+    options: ["To display information on the screen", "To read data from and write data to files", "To control the flow of program execution", "To perform mathematical calculations"],
+    answer: "To read data from and write data to files"
+  },
+  {
+    question: "What is an exception in programming?",
+    options: ["A normal part of program execution", "An unexpected event that occurs during program execution that disrupts the normal flow of instructions", "A way to define new data types", "A type of loop that runs indefinitely"],
+    answer: "An unexpected event that occurs during program execution that disrupts the normal flow of instructions"
+  },
+  {
+    question: "What is exception handling?",
+    options: ["Ignoring errors that occur during runtime", "Writing code to gracefully handle exceptions and prevent program termination", "A way to define recursive functions", "A method for optimizing program performance"],
+    answer: "Writing code to gracefully handle exceptions and prevent program termination"
+  },
+  {
+    question: "What is debugging?",
+    options: ["Writing code quickly without testing", "The process of finding and fixing errors in a program", "A way to optimize program speed", "A method for documenting code"],
+    answer: "The process of finding and fixing errors in a program"
+  },
+  {
+    question: "What is a compiler?",
+    options: ["A program that executes code line by line", "A program that translates source code into machine code before execution", "A tool used for debugging code", "A program that manages files and directories"],
+    answer: "A program that translates source code into machine code before execution"
+  },
+  {
+    question: "What is an interpreter?",
+    options: ["A program that translates source code into machine code all at once", "A program that executes code line by line", "A tool used for linking different parts of a program", "A program that optimizes code for better performance"],
+    answer: "A program that executes code line by line"
+  },
+  {
+    question: "What is a library in programming?",
+    options: ["A collection of books about programming", "A collection of pre-written code that provides reusable functions and routines", "A specific programming language syntax", "A tool for managing project files"],
+    answer: "A collection of pre-written code that provides reusable functions and routines"
+  },
+  {
+    question: "What is an API (Application Programming Interface)?",
+    options: ["A physical interface between hardware components", "A set of rules and protocols that allows different software applications to communicate with each other", "A type of operating system", "A graphical user interface for a program"],
+    answer: "A set of rules and protocols that allows different software applications to communicate with each other"
+  },
+  {
+    question: "What is version control?",
+    options: ["A way to manage different versions of a software project", "A method for compiling code", "A technique for debugging programs", "A type of software license"],
+    answer: "A way to manage different versions of a software project"
+  },
+  {
+    question: "Which of the following is a popular version control system?",
+    options: ["Java", "Python", "Git", "HTML"],
+    answer: "Git"
+  },
+  {
+    question: "What is a repository in version control?",
+    options: ["A temporary storage space for files", "A central location where all the files and their history for a project are stored", "A way to execute program code", "A tool for comparing different versions of a file"],
+    answer: "A central location where all the files and their history for a project are stored"
+  },
+  {
+    question: "What is a commit in version control?",
+    options: ["A way to discard changes", "A snapshot of the changes made to the codebase at a specific point in time", "A branch of development", "A remote server"],
+    answer: "A snapshot of the changes made to the codebase at a specific point in time"
+  },
+  
+{
+  question: "Which of the following is NOT a fundamental data type in most programming languages?",
+  options: ["Integer", "Float", "Boolean", "String", "Structure"],
+  answer: "Structure"
+},
+{
+  question: "What is the purpose of a variable in programming?",
+  options: ["To store data values", "To define program functions", "To control the flow of execution", "To perform arithmetic operations"],
+  answer: "To store data values"
+},
+{
+  question: "Which operator is used for assignment in most programming languages?",
+  options: ["==", "=", "+=", "->"],
+  answer: "="
+},
+{
+  question: "What is a conditional statement used for?",
+  options: ["To repeat a block of code", "To execute a block of code only if a certain condition is true", "To define data structures", "To perform input and output operations"],
+  answer: "To execute a block of code only if a certain condition is true"
+},
+{
+  question: "Which of the following is a common type of loop?",
+  options: ["If-else", "Switch", "While", "Function"],
+  answer: "While"
+},
+{
+  question: "What is the purpose of a function in programming?",
+  options: ["To store data", "To group a block of code that performs a specific task", "To control program execution speed", "To define variable types"],
+  answer: "To group a block of code that performs a specific task"
+},
+{
+  question: "What is the scope of a variable?",
+  options: ["The data type of the variable", "The value stored in the variable", "The region of the program where the variable can be accessed", "The size of the memory allocated to the variable"],
+  answer: "The region of the program where the variable can be accessed"
+},
+{
+  question: "What is an array?",
+  options: ["A single value stored in memory", "A collection of elements of the same data type stored in contiguous memory locations", "A way to define program functions", "A type of loop structure"],
+  answer: "A collection of elements of the same data type stored in contiguous memory locations"
+},
+{
+  question: "What is a pointer?",
+  options: ["A variable that stores a data value", "A variable that stores the memory address of another variable", "A way to define program flow", "A specific data type for storing addresses"],
+  answer: "A variable that stores the memory address of another variable"
+},
+{
+  question: "What is the purpose of dynamic memory allocation?",
+  options: ["To allocate a fixed amount of memory at compile time", "To allocate memory during program execution as needed", "To optimize program speed", "To manage file input and output"],
+  answer: "To allocate memory during program execution as needed"
+},
+{
+  question: "What is a data structure?",
+  options: ["A way to store individual data items", "A specific format for inputting data", "A way to organize and store data to facilitate efficient access and modification", "A method for controlling program flow"],
+  answer: "A way to organize and store data to facilitate efficient access and modification"
+},
+{
+  question: "Which of the following is a linear data structure?",
+  options: ["Tree", "Graph", "Stack", "Heap"],
+  answer: "Stack"
+},
+{
+  question: "What is the principle of LIFO related to?",
+  options: ["Queue", "Stack", "Linked List", "Array"],
+  answer: "Stack"
+},
+{
+  question: "What is the principle of FIFO related to?",
+  options: ["Stack", "Queue", "Tree", "Graph"],
+  answer: "Queue"
+},
+{
+  question: "What is a linked list?",
+  options: ["A contiguous block of memory storing data", "A collection of nodes where each node contains data and a pointer to the next node", "A data structure with a fixed size", "A way to implement recursive functions"],
+  answer: "A collection of nodes where each node contains data and a pointer to the next node"
+},
+{
+  question: "What is a tree data structure?",
+  options: ["A linear data structure", "A hierarchical data structure with a root node and child nodes", "A data structure where each element points to the previous one", "A data structure optimized for searching unsorted data"],
+  answer: "A hierarchical data structure with a root node and child nodes"
+},
+{
+  question: "What is a binary tree?",
+  options: ["A tree where each node has at most one child", "A tree where each node has exactly two children", "A tree where each node has at most two children", "A tree where nodes are ordered based on their values"],
+  answer: "A tree where each node has at most two children"
+},
+{
+  question: "What is a binary search tree?",
+  options: ["A binary tree where nodes are not ordered", "A binary tree where the left child is always greater than the parent", "A binary tree where the left child is less than or equal to the parent, and the right child is greater than the parent", "A balanced binary tree"],
+  answer: "A binary tree where the left child is less than or equal to the parent, and the right child is greater than the parent"
+},
+{
+  question: "What is a graph data structure?",
+  options: ["A linear collection of data", "A hierarchical structure with a single root", "A collection of nodes (vertices) and edges that connect them", "A data structure optimized for storing key-value pairs"],
+  answer: "A collection of nodes (vertices) and edges that connect them"
+},
+{
+  question: "What is an algorithm?",
+  options: ["A specific programming language", "A set of well-defined instructions for solving a problem", "A type of data structure", "A hardware component of a computer"],
+  answer: "A set of well-defined instructions for solving a problem"
+},
+{
+  question: "What is time complexity of an algorithm?",
+  options: ["The amount of memory an algorithm uses", "The speed at which an algorithm executes on a specific machine", "A measure of the amount of time an algorithm takes to run as a function of the input size", "The number of lines of code in an algorithm"],
+  answer: "A measure of the amount of time an algorithm takes to run as a function of the input size"
+},
+{
+  question: "What is space complexity of an algorithm?",
+  options: ["The time it takes for an algorithm to run", "The amount of memory an algorithm uses as a function of the input size", "The number of loops in an algorithm", "The complexity of the logic within an algorithm"],
+  answer: "The amount of memory an algorithm uses as a function of the input size"
+},
+{
+  question: "What is the time complexity of linear search in the worst case?",
+  options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+  answer: "O(n)"
+},
+{
+  question: "What is the time complexity of binary search in the worst case?",
+  options: ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+  answer: "O(log n)"
+},
+{
+  question: "What is the time complexity of bubble sort in the worst case?",
+  options: ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
+  answer: "O(n^2)"
+},
+{
+  question: "What is the time complexity of merge sort in the worst case?",
+  options: ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
+  answer: "O(n log n)"
+},
+{
+  question: "What is recursion?",
+  options: ["A loop that iterates a fixed number of times", "A function that calls itself", "A way to define data structures dynamically", "A method for handling errors in a program"],
+  answer: "A function that calls itself"
+},
+{
+  question: "What is a base case in a recursive function?",
+  options: ["The case that causes the function to call itself", "The condition that stops the recursion", "The initial value passed to the function", "The most complex part of the function"],
+  answer: "The condition that stops the recursion"
+},
+{
+  question: "What is object-oriented programming (OOP)?",
+  options: ["A programming paradigm focused on functions", "A programming paradigm based on the concept of 'objects' which can contain data and code", "A low-level programming approach", "A declarative programming style"],
+  answer: "A programming paradigm based on the concept of 'objects' which can contain data and code"
+},
+{
+  question: "What is a class in OOP?",
+  options: ["An instance of an object", "A blueprint for creating objects", "A specific data type", "A function within an object"],
+  answer: "A blueprint for creating objects"
+},
+{
+  question: "What is an object in OOP?",
+  options: ["A blueprint for creating classes", "An instance of a class", "A way to define program flow", "A fundamental data type"],
+  answer: "An instance of a class"
+},
+{
+  question: "What is encapsulation in OOP?",
+  options: ["The ability of an object to take on many forms", "Hiding the implementation details of an object and exposing only the necessary interface", "The mechanism of inheriting properties from a parent class", "The interaction between different objects"],
+  answer: "Hiding the implementation details of an object and exposing only the necessary interface"
+},
+{
+  question: "What is inheritance in OOP?",
+  options: ["The ability of an object to take on many forms", "Hiding data within an object", "The mechanism by which a class can inherit properties and methods from a parent class", "The creation of objects from a class"],
+  answer: "The mechanism by which a class can inherit properties and methods from a parent class"
+},
+{
+  question: "What is polymorphism in OOP?",
+  options: ["The ability of an object to take on many forms", "Hiding the internal workings of an object", "The relationship between classes", "The process of creating objects"],
+  answer: "The ability of an object to take on many forms"
+},
+{
+  question: "What is a constructor in a class?",
+  options: ["A method used to destroy an object", "A special method that is automatically called when an object of the class is created", "A method used to access private members of a class", "A method that performs the main logic of the class"],
+  answer: "A special method that is automatically called when an object of the class is created"
+},
+{
+  question: "What is a destructor in a class (in languages that support it)?",
+  options: ["A method used to initialize an object", "A special method that is automatically called when an object is about to be destroyed", "A method used to modify the state of an object", "A method that returns information about the object"],
+  answer: "A special method that is automatically called when an object is about to be destroyed"
+},
+{
+  question: "What is a file in computer programming?",
+  options: ["A temporary storage location in memory", "A named collection of related data stored on a persistent storage medium", "A way to define program functions", "A visual representation of data"],
+  answer: "A named collection of related data stored on a persistent storage medium"
+},
+{
+  question: "What is the purpose of file input/output (I/O)?",
+  options: ["To display information on the screen", "To read data from and write data to files", "To control the flow of program execution", "To perform mathematical calculations"],
+  answer: "To read data from and write data to files"
+},
+{
+  question: "What is an exception in programming?",
+  options: ["A normal part of program execution", "An unexpected event that occurs during program execution that disrupts the normal flow of instructions", "A way to define new data types", "A type of loop that runs indefinitely"],
+  answer: "An unexpected event that occurs during program execution that disrupts the normal flow of instructions"
+},
+{
+  question: "What is exception handling?",
+  options: ["Ignoring errors that occur during runtime", "Writing code to gracefully handle exceptions and prevent program termination", "A way to define recursive functions", "A method for optimizing program performance"],
+  answer: "Writing code to gracefully handle exceptions and prevent program termination"
+},
+{
+  question: "What is debugging?",
+  options: ["Writing code quickly without testing", "The process of finding and fixing errors in a program", "A way to optimize program speed", "A method for documenting code"],
+  answer: "The process of finding and fixing errors in a program"
+},
+{
+  question: "What is a compiler?",
+  options: ["A program that executes code line by line", "A program that translates source code into machine code before execution", "A tool used for debugging code", "A program that manages files and directories"],
+  answer: "A program that translates source code into machine code before execution"
+},
+{
+  question: "What is an interpreter?",
+  options: ["A program that translates source code into machine code all at once", "A program that executes code line by line", "A tool used for linking different parts of a program", "A program that optimizes code for better performance"],
+  answer: "A program that executes code line by line"
+},
+{
+  question: "What is a library in programming?",
+  options: ["A collection of books about programming", "A collection of pre-written code that provides reusable functions and routines", "A specific programming language syntax", "A tool for managing project files"],
+  answer: "A collection of pre-written code that provides reusable functions and routines"
+},
+{
+  question: "What is an API (Application Programming Interface)?",
+  options: ["A physical interface between hardware components", "A set of rules and protocols that allows different software applications to communicate with each other", "A type of operating system", "A graphical user interface for a program"],
+  answer: "A set of rules and protocols that allows different software applications to communicate with each other"
+},
+{
+  question: "What is version control?",
+  options: ["A way to manage different versions of a software project", "A method for compiling code", "A technique for debugging programs", "A type of software license"],
+  answer: "A way to manage different versions of a software project"
+},
+{
+  question: "Which of the following is a popular version control system?",
+  options: ["Java", "Python", "Git", "HTML"],
+  answer: "Git"
+},
+{
+  question: "What is a repository in version control?",
+  options: ["A temporary storage space for files", "A central location where all the files and their history for a project are stored", "A way to execute program code", "A tool for comparing different versions of a file"],
+  answer: "A central location where all the files and their history for a project are stored"
+},
+{
+  question: "What is a commit in version control?",
+  options: ["A way to discard changes", "A snapshot of the changes made to the codebase at a specific point in time", "A branch of development", "A remote server"],
+  answer: "A snapshot of the changes made to the codebase at a specific point in time"
+},
+
+{
+  question: "What does HTML stand for?",
+  options: ["Hyper Text Markup Language", "High-level Text Manipulation Language", "Home Tool Management Language", "Hyperlink and Text Management Language"],
+  answer: "Hyper Text Markup Language"
+},
+{
+  question: "Which HTML tag is used to define the structure of an HTML document?",
+  options: ["<head>", "<title>", "<body>", "<html>"],
+  answer: "<html>"
+},
+{
+  question: "Which HTML tag is used to define the main content of an HTML document?",
+  options: ["<head>", "<title>", "<body>", "<div>"],
+  answer: "<body>"
+},
+{
+  question: "Which HTML tag is used to create a heading?",
+  options: ["<p>", "<h1>", "<span>", "<a>"],
+  answer: "<h1>"
+},
+{
+  question: "Which HTML tag is used to create a paragraph?",
+  options: ["<h1>", "<li>", "<p>", "<img>"],
+  answer: "<p>"
+},
+{
+  question: "Which HTML tag is used to create a hyperlink?",
+  options: ["<link>", "<href>", "<a>", "<url>"],
+  answer: "<a>"
+},
+{
+  question: "Which HTML attribute specifies the URL of a link?",
+  options: ["src", "href", "link", "url"],
+  answer: "href"
+},
+{
+  question: "Which HTML tag is used to display an image?",
+  options: ["<picture>", "<src>", "<img>", "<image>"],
+  answer: "<img>"
+},
+{
+  question: "Which HTML attribute specifies the source of an image?",
+  options: ["href", "url", "src", "link"],
+  answer: "src"
+},
+{
+  question: "Which HTML tag is used to create an unordered list?",
+  options: ["<ol>", "<li>", "<ul>", "<dl>"],
+  answer: "<ul>"
+},
+{
+  question: "Which HTML tag is used to create an ordered list?",
+  options: ["<ul>", "<li>", "<ol>", "<dl>"],
+  answer: "<ol>"
+},
+{
+  question: "Which HTML tag is used to define a list item?",
+  options: ["<ul>", "<ol>", "<list>", "<li>"],
+  answer: "<li>"
+},
+{
+  question: "What does CSS stand for?",
+  options: ["Cascading Style Sheets", "Creative Style System", "Computer Style Sheet", "Colorful Style System"],
+  answer: "Cascading Style Sheets"
+},
+{
+  question: "What is CSS primarily used for?",
+  options: ["Adding interactivity to web pages", "Defining the structure of web pages", "Styling the presentation of web pages", "Managing server-side logic"],
+  answer: "Styling the presentation of web pages"
+},
+{
+  question: "Which CSS property is used to change the text color of an element?",
+  options: ["font-color", "text-style", "color", "foreground-color"],
+  answer: "color"
+},
+{
+  question: "Which CSS property is used to change the background color of an element?",
+  options: ["bg-color", "background", "element-color", "color-background"],
+  answer: "background"
+},
+{
+  question: "Which CSS property is used to control the font size of text?",
+  options: ["text-size", "font", "size", "font-size"],
+  answer: "font-size"
+},
+{
+  question: "Which CSS property is used to add space inside an element's border?",
+  options: ["margin", "border-spacing", "padding", "spacing"],
+  answer: "padding"
+},
+{
+  question: "Which CSS property is used to add space outside an element's border?",
+  options: ["padding", "border-width", "margin", "outline"],
+  answer: "margin"
+},
+{
+  question: "What is JavaScript primarily used for in web development?",
+  options: ["Styling web pages", "Defining the structure of web pages", "Adding interactivity and dynamic behavior to web pages", "Managing server-side databases"],
+  answer: "Adding interactivity and dynamic behavior to web pages"
+},
+{
+  question: "Which keyword is used to declare a variable in JavaScript?",
+  options: ["variable", "int", "string", "let"],
+  answer: "let"
+},
+{
+  question: "Which JavaScript function is commonly used to display output in the console?",
+  options: ["alert()", "prompt()", "console.log()", "document.write()"],
+  answer: "console.log()"
+},
+{
+  question: "What is an event in JavaScript?",
+  options: ["A specific data type", "An action that occurs in the browser (e.g., a mouse click)", "A way to define functions", "A method for styling HTML elements"],
+  answer: "An action that occurs in the browser (e.g., a mouse click)"
+},
+{
+  question: "What is the DOM (Document Object Model)?",
+  options: ["A way to style HTML elements", "A programming interface for HTML and XML documents", "A language for querying databases", "A server-side scripting language"],
+  answer: "A programming interface for HTML and XML documents"
+},
+{
+  question: "Which JavaScript method is used to find an HTML element by its ID?",
+  options: ["getElementByClass()", "querySelector()", "getElementById()", "getElementByTag()"],
+  answer: "getElementById()"
+},
+{
+  question: "What is a function in JavaScript?",
+  options: ["A data type that stores multiple values", "A block of code designed to perform a specific task", "A way to style HTML elements dynamically", "An event that occurs on a web page"],
+  answer: "A block of code designed to perform a specific task"
+},
+{
+  question: "What is an array in JavaScript?",
+  options: ["A single value stored in memory", "An ordered list of values", "A way to define HTML elements", "A type of loop"],
+  answer: "An ordered list of values"
+},
+{
+  question: "What is an object in JavaScript?",
+  options: ["A primitive data type", "A collection of key-value pairs", "A way to define CSS styles", "A type of event listener"],
+  answer: "A collection of key-value pairs"
+},
+{
+  question: "What is JSON (JavaScript Object Notation)?",
+  options: ["A JavaScript library for DOM manipulation", "A lightweight data-interchange format", "A CSS framework", "A server-side JavaScript runtime environment"],
+  answer: "A lightweight data-interchange format"
+},
+{
+  question: "What is a web server?",
+  options: ["The user's web browser", "A computer that hosts websites and delivers web pages to clients", "A programming language for web development", "A network cable connecting computers"],
+  answer: "A computer that hosts websites and delivers web pages to clients"
+},
+{
+  question: "What is HTTP (Hypertext Transfer Protocol)?",
+  options: ["A programming language for web servers", "The underlying protocol used by the World Wide Web for transferring data", "A system for naming web addresses", "A type of network hardware"],
+  answer: "The underlying protocol used by the World Wide Web for transferring data"
+},
+{
+  question: "What is a URL (Uniform Resource Locator)?",
+  options: ["The language used to write web pages", "The address of a resource on the internet", "A set of rules for styling web pages", "A type of network connection"],
+  answer: "The address of a resource on the internet"
+},
+{
+  question: "What is the purpose of a web browser?",
+  options: ["To host websites on the internet", "To display web pages and interact with web applications", "To write code for web development", "To manage network connections"],
+  answer: "To display web pages and interact with web applications"
+},
+{
+  question: "What is a front-end developer primarily responsible for?",
+  options: ["Handling server-side logic and databases", "Designing and implementing the user interface and user experience", "Managing network infrastructure", "Ensuring website security"],
+  answer: "Designing and implementing the user interface and user experience"
+},
+{
+  question: "What is a back-end developer primarily responsible for?",
+  options: ["Designing the user interface", "Handling server-side logic, databases, and APIs", "Managing client-side scripting", "Styling web pages"],
+  answer: "Handling server-side logic, databases, and APIs"
+},
+{
+  question: "What is a web framework?",
+  options: ["A complete operating system for web servers", "A collection of tools and libraries that simplifies web development", "A specific programming language for the web", "A hardware component for web servers"],
+  answer: "A collection of tools and libraries that simplifies web development"
+},
+{
+  question: "Which of the following is a popular front-end JavaScript framework?",
+  options: ["Node.js", "Express.js", "React", "Django"],
+  answer: "React"
+},
+{
+  question: "Which of the following is a popular back-end JavaScript runtime environment?",
+  options: ["HTML", "CSS", "Node.js", "Angular"],
+  answer: "Node.js"
+},
+{
+  question: "What is an API endpoint?",
+  options: ["The starting point of a website", "A specific URL that a server provides for accessing its resources or functionalities", "A type of database", "A client-side scripting function"],
+  answer: "A specific URL that a server provides for accessing its resources or functionalities"
+},
+{
+  question: "What is AJAX (Asynchronous JavaScript and XML)?",
+  options: ["A programming language for server-side development", "A technique for creating dynamic web pages by exchanging data with the server in the background", "A way to style web pages using JavaScript", "A method for storing data in the browser"],
+  answer: "A technique for creating dynamic web pages by exchanging data with the server in the background"
+},
+{
+  question: "What is responsive web design?",
+  options: ["Designing websites that respond to user input quickly", "Designing websites that adapt to different screen sizes and devices", "Designing websites with a lot of animations and transitions", "Designing websites that use only text and no images"],
+  answer: "Designing websites that adapt to different screen sizes and devices"
+},
+{
+  question: "What are media queries in CSS used for?",
+  options: ["To apply different styles based on different media types or device characteristics", "To query data from a server", "To manipulate the DOM using CSS", "To create animations in CSS"],
+  answer: "To apply different styles based on different media types or device characteristics"
+},
+{
+  question: "What is web security?",
+  options: ["Designing visually appealing websites", "Protecting websites and web applications from threats and attacks", "Optimizing website performance", "Ensuring websites are accessible to everyone"],
+  answer: "Protecting websites and web applications from threats and attacks"
+},
+{
+  question: "What is HTTPS?",
+  options: ["A faster version of HTTP", "HTTP with added security (encryption)", "A protocol for transferring files", "A language for styling web pages securely"],
+  answer: "HTTP with added security (encryption)"
+},
+{
+  question: "What is SQL (Structured Query Language) used for in web development?",
+  options: ["Styling web pages", "Defining the structure of web pages", "Managing and querying databases", "Handling server-side routing"],
+  answer: "Managing and querying databases"
+},
+{
+  question: "What is a cookie in web development?",
+  options: ["A small text file that a website stores on a user's computer", "A type of web animation", "A security protocol for websites", "A programming language for server-side scripting"],
+  answer: "A small text file that a website stores on a user's computer"
+},
+{
+  question: "What is a web session?",
+  options: ["A single request-response cycle between a client and a server", "A series of related HTTP requests and responses initiated by the same user over a period of time", "A way to store data on the client-side", "A method for styling web pages dynamically"],
+  answer: "A series of related HTTP requests and responses initiated by the same user over a period of time"
+},
+{
+  question: "What is server-side rendering (SSR)?",
+  options: ["Rendering web pages in the user's browser", "Rendering web pages on the server before sending them to the client", "Using CSS to create server-like layouts", "A JavaScript library for server-side styling"],
+  answer: "Rendering web pages on the server before sending them to the client"
+},
+{
+  question: "What is client-side rendering (CSR)?",
+  options: ["Rendering web pages on the server", "Rendering web pages in the user's browser using JavaScript", "A CSS technique for client-based animations", "A server-side technology for handling client requests"],
+  answer: "Rendering web pages in the user's browser using JavaScript"
+},
+{
+  question: "What is a Progressive Web App (PWA)?",
+  options: ["A website that looks and behaves like a native mobile app", "A web application that only works on desktop browsers", "A native mobile application built with web technologies", "A website with only static content"],
+  answer: "A website that looks and behaves like a native mobile app"
+},
+
+{
+  question: "Which of the following is NOT a fundamental data structure?",
+  options: ["Array", "Linked List", "Tree", "Algorithm"],
+  answer: "Algorithm"
+},
+{
+  question: "What is the primary purpose of a data structure?",
+  options: ["To execute program instructions", "To store and organize data efficiently", "To control the flow of execution", "To perform arithmetic operations"],
+  answer: "To store and organize data efficiently"
+},
+{
+  question: "What is the time complexity of accessing an element in an array by its index?",
+  options: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+  answer: "O(1)"
+},
+{
+  question: "What is the time complexity of searching for an element in an unsorted array?",
+  options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+  answer: "O(n)"
+},
+{
+  question: "What is the time complexity of inserting an element at the beginning of a singly linked list?",
+  options: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+  answer: "O(1)"
+},
+{
+  question: "What is the time complexity of searching for an element in a sorted singly linked list?",
+  options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+  answer: "O(n)"
+},
+{
+  question: "Which data structure follows the Last-In, First-Out (LIFO) principle?",
+  options: ["Queue", "Stack", "Linked List", "Heap"],
+  answer: "Stack"
+},
+{
+  question: "Which data structure follows the First-In, First-Out (FIFO) principle?",
+  options: ["Stack", "Queue", "Tree", "Graph"],
+  answer: "Queue"
+},
+{
+  question: "What is the time complexity of the push operation in a stack implemented using an array?",
+  options: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+  answer: "O(1)"
+},
+{
+  question: "What is the time complexity of the enqueue operation in a queue implemented using a linked list?",
+  options: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+  answer: "O(1)"
+},
+{
+  question: "What is a binary search tree?",
+  options: ["A tree where each node has at most one child", "A tree where each node has exactly two children", "A tree where the left child's value is less than or equal to the parent's value, and the right child's value is greater", "A balanced tree structure"],
+  answer: "A tree where the left child's value is less than or equal to the parent's value, and the right child's value is greater"
+},
+{
+  question: "What is the average time complexity of searching in a balanced binary search tree?",
+  options: ["O(n)", "O(n^2)", "O(1)", "O(log n)"],
+  answer: "O(log n)"
+},
+{
+  question: "What is a heap data structure?",
+  options: ["A linear data structure", "A tree-based data structure that satisfies the heap property", "A type of graph", "A data structure optimized for searching"],
+  answer: "A tree-based data structure that satisfies the heap property"
+},
+{
+  question: "In a min-heap, the value of each node is:",
+  options: ["Greater than or equal to the value of its children", "Less than or equal to the value of its children", "Equal to the value of its children", "Arbitrary"],
+  answer: "Less than or equal to the value of its children"
+},
+{
+  question: "What is the time complexity of the heapify operation?",
+  options: ["O(n^2)", "O(log n)", "O(n log n)", "O(n)"],
+  answer: "O(n)"
+},
+{
+  question: "What is a graph?",
+  options: ["A linear sequence of nodes", "A hierarchical structure with a root", "A collection of vertices and edges", "A data structure for storing key-value pairs"],
+  answer: "A collection of vertices and edges"
+},
+{
+  question: "What is the difference between a directed and an undirected graph?",
+  options: ["Directed graphs have cycles, undirected graphs do not", "Edges in a directed graph have a specific direction, while edges in an undirected graph do not", "Undirected graphs are always connected", "Directed graphs are used for searching, undirected graphs for sorting"],
+  answer: "Edges in a directed graph have a specific direction, while edges in an undirected graph do not"
+},
+{
+  question: "Which graph traversal algorithm explores as far as possible along each branch before backtracking?",
+  options: ["Breadth-First Search (BFS)", "Depth-First Search (DFS)", "Dijkstra's Algorithm", "Prim's Algorithm"],
+  answer: "Depth-First Search (DFS)"
+},
+{
+  question: "Which graph traversal algorithm explores all the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level?",
+  options: ["Depth-First Search (DFS)", "Breadth-First Search (BFS)", "Kruskal's Algorithm", "Topological Sort"],
+  answer: "Breadth-First Search (BFS)"
+},
+{
+  question: "What is an algorithm?",
+  options: ["A specific programming language", "A step-by-step procedure for solving a problem", "A type of data structure", "A hardware component"],
+  answer: "A step-by-step procedure for solving a problem"
+},
+{
+  question: "What is the goal of algorithm design?",
+  options: ["To write the shortest possible code", "To develop an efficient solution to a problem", "To use the most advanced programming techniques", "To create visually appealing output"],
+  answer: "To develop an efficient solution to a problem"
+},
+{
+  question: "What is asymptotic notation used for?",
+  options: ["To measure the exact running time of an algorithm", "To describe the limiting behavior of an algorithm's runtime as the input size grows", "To count the number of lines of code", "To optimize the memory usage of an algorithm"],
+  answer: "To describe the limiting behavior of an algorithm's runtime as the input size grows"
+},
+{
+  question: "Which of the following represents the fastest growing function?",
+  options: ["O(n)", "O(log n)", "O(n^2)", "O(2^n)"],
+  answer: "O(2^n)"
+},
+{
+  question: "What is the time complexity of the selection sort algorithm?",
+  options: ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
+  answer: "O(n^2)"
+},
+{
+  question: "What is the time complexity of the insertion sort algorithm in the worst case?",
+  options: ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
+  answer: "O(n^2)"
+},
+{
+  question: "What is the average time complexity of quicksort?",
+  options: ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
+  answer: "O(n log n)"
+},
+{
+  question: "What is the space complexity of merge sort?",
+  options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+  answer: "O(n)"
+},
+{
+  question: "What is the space complexity of quicksort in the average case (excluding recursion stack)?",
+  options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+  answer: "O(log n)"
+},
 {
   question: "What is a greedy algorithm?",
   options: ["An algorithm that always chooses the locally optimal choice at each step", "An algorithm that explores all possible solutions", "An algorithm that divides the problem into smaller subproblems", "An algorithm that backtracks to find the optimal solution"],
